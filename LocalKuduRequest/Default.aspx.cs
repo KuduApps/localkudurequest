@@ -30,7 +30,7 @@ namespace LocalKuduRequest
             }
             catch (WebException ex)
             {
-                Label1.Text += string.Format("<br/> Error code: {0}", ex.Status);
+                Label1.Text += string.Format("<br/> Error code: {0} <br/>", ex.Status);
                 Label1.Text += ex.ToString().Replace("---", "<br />");               
 
                 try
